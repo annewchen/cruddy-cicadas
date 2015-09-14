@@ -1,0 +1,7 @@
+Edit your profile
+<!-- action goes to the route specified after submiting -->
+<form method="POST" action="/users/<%= @user.id %>/update">
+
+  <input type="text" name="name" placeholder="<%= @user.name %>">
+  <input type="submit" calue="Update Info">
+</form>

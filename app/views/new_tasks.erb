@@ -1,0 +1,8 @@
+This is a new task for <%= @user.name %>
+
+<form method="POST" action"/users/<%= @user.id %>/tasks/create">
+  <input type="text" name="description" placeholder="Task Description">
+  <input type="date" name="due_due">
+  <input type="hidden" name="user_id" value="<%= @user.id %>">
+  <input type="submit" value="Add Task">
+</form>

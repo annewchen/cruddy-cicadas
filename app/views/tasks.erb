@@ -1,0 +1,7 @@
+These are the tasks for <%= @user.name %>
+
+<ul>
+  <% @user.tasks.each do |task| %>
+  <li> <%= task.description %> </li>
+  <% end %>
+</ul>
